@@ -44,13 +44,9 @@ PDF Renamer adalah sebuah script Python yang digunakan untuk mengganti nama file
 
 1. Jalankan script dengan perintah:
 
-   - ```python rename.py --mode X```
- 
-   - --mode X: Hanya tambahkan referensi jika ada
-     
-   - --mode Y: Selalu tambahkan referensi (atau "Tidak Ada Referensi" jika kosong)
-     
-   - --mode Z: Abaikan referensi sepenuhnya
+   - ```python rename.py```
+
+   - Pilih antara pakai Refrensi (yang ada di dalam PDF Efaktur atau tidak) 
 
 2. Masukkan path folder yang berisi file PDF faktur pajak.
 
