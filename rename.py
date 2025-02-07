@@ -2,7 +2,6 @@ import pdfplumber
 import re
 import os
 import shutil
-import argparse
 from datetime import datetime
 from colorama import Fore, Style, init
 import time
@@ -47,11 +46,7 @@ def extract_info_from_pdf(pdf_path, debug=False):
 
     # Ekstrak referensi dengan regex yang diperbarui
     reference_match = re.search(r'Referensi:\s*([^)]*)', text)
-    if reference_match:
-        ref = reference_match.group(1).strip()
-        reference = ref if ref else None
-    else:
-        reference = None
+    reference = reference_match.group(1).strip() if reference_match and reference_match.group(1).strip() else None
 
     return partner_name, date, reference
 
@@ -91,12 +86,9 @@ def rename_pdf_files(input_directory, mode, debug=False):
                 # Bangun nama file berdasarkan mode
                 parts = [partner_name, date]
                 
-                if mode == 'X':
-                    if reference is not None:
-                        parts.append(reference)
-                elif mode == 'Y':
-                    parts.append(reference if reference is not None else "Tidak Ada Referensi")
-                elif mode == 'Z':
+                if mode == 'Y':
+                    parts.append(reference if reference is not None else "===Tidak Ada REFRENSI===")
+                elif mode == 'N':
                     pass  # Abaikan referensi
                 
                 new_filename = " ".join(parts) + ".pdf"
@@ -121,11 +113,12 @@ def rename_pdf_files(input_directory, mode, debug=False):
 
 def main():
     welcome_message()
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--debug", action="store_true", help="Tampilkan teks mentah dari PDF")
-    parser.add_argument("--mode", choices=['X', 'Y', 'Z'], default='Y',
-                        help="Mode penanganan referensi: X (hanya jika ada), Y (tambahkan 'Tidak Ada Referensi' jika tidak ada), Z (abaikan referensi)")
-    args = parser.parse_args()
+    mode = input(Fore.BLUE + "Apakah kamu ingin pakai referensi atau tidak? (Y/N) (Default Y): ").strip().upper()
+    if mode not in ['Y', 'N', '']:
+        print(Fore.RED + "Mode tidak valid. Pilih Y atau N.")
+        return
+    if mode == '':
+        mode = 'Y'  # Set default ke Y jika user menekan Enter tanpa input
     
     input_directory = input(Fore.BLUE + "Masukkan path direktori input: ")
     
@@ -133,7 +126,7 @@ def main():
         print(Fore.RED + f"Direktori '{input_directory}' tidak ditemukan.")
         return
     
-    rename_pdf_files(input_directory, args.mode, args.debug)
+    rename_pdf_files(input_directory, mode, debug=False)
 
 if __name__ == "__main__":
     main()
