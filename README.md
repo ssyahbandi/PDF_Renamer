@@ -27,7 +27,7 @@ PDF Renamer adalah sebuah script Python yang digunakan untuk mengganti nama file
 
 3. Clone Repository
 
-    - ```git clone https://github.com/username/PDF-Renamer.git```
+    - ```git clone https://github.com/ssyahbandi/PDF_Renamer.git```
 
     - ```cd PDF-Renamer```
 
