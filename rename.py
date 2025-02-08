@@ -51,7 +51,7 @@ def extract_info_from_pdf(pdf_path, debug=False):
 
     # Ekstrak referensi
     reference_match = re.search(r'Referensi:\s*([^)]*)', text)
-    reference = reference_match.group(1).strip() if reference_match and reference_match.group(1).strip() else "Tidak Ada Referensi"
+    reference = reference_match.group(1).strip() if reference_match and reference_match.group(1).strip() else "======Tidak Ada Referensi======"
 
     return partner_name, faktur_number, date, reference
 
