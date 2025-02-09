@@ -4,10 +4,19 @@ import os
 import shutil
 from datetime import datetime
 from colorama import Fore, Style, init
-import hashlib
 import time
 
 init(autoreset=True)
+LOG_FILE = "log.txt"
+
+def log_message(message, color=Fore.WHITE, include_timestamp=True):
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    log_entry = f"[{timestamp}] {message}" if include_timestamp else message
+    
+    print(f"{color}{log_entry}")
+    
+    with open(LOG_FILE, "a", encoding="utf-8") as log_file:
+        log_file.write(log_entry + "\n")
 
 def welcome_message():
     print(Fore.MAGENTA + "==============================================")
@@ -16,133 +25,122 @@ def welcome_message():
     print(Fore.MAGENTA + "==============================================")
     time.sleep(2)
 
-def extract_info_from_pdf(pdf_path, debug=False):
+def extract_info_from_pdf(pdf_path):
     with pdfplumber.open(pdf_path) as pdf:
-        text = ""
-        for page in pdf.pages:
-            text += page.extract_text() + "\n"
-    
-    if debug:
-        print(Fore.YELLOW + "========== RAW TEXT ==========")
-        print(text)
-        print(Fore.YELLOW + "==============================")
+        text = "".join(page.extract_text() + "\n" for page in pdf.pages if page.extract_text())
 
-    # Ekstrak nama lawan transaksi
-    partner_name_match = re.search(r'Pembeli Barang Kena Pajak\s*/\s*Penerima Jasa Kena Pajak:\s*Nama\s*:\s*(.+?)\s*Alamat', text)
-    partner_name = partner_name_match.group(1).strip().title() if partner_name_match else "Nama tidak ditemukan"
+    id_tku_match = re.search(r'#?(\d{22})', text)
+    id_tku = id_tku_match.group(1).strip() if id_tku_match else None
 
-    # Ekstrak tanggal
+    partner_match = re.search(r'Pembeli Barang Kena Pajak\s*/\s*Penerima Jasa Kena Pajak:\s*Nama\s*:\s*(.+?)\s*Alamat', text, re.DOTALL)
+    partner_name = partner_match.group(1).strip().title() if partner_match else "Nama tidak ditemukan"
+
     date_match = re.search(r'(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})', text)
-    if date_match:
-        day, month, year = date_match.groups()
-        month_dict = {
-            "Januari": "01", "Februari": "02", "Maret": "03", "April": "04",
-            "Mei": "05", "Juni": "06", "Juli": "07", "Agustus": "08",
-            "September": "09", "Oktober": "10", "November": "11", "Desember": "12"
-        }
-        month = month_dict.get(month, "00")
-        date = f"{day}-{month}-{year}"
-    else:
-        date = "Tanggal tidak ditemukan"
+    month_dict = {"Januari":"01",
+                   "Februari":"02",
+                   "Maret":"03",
+                   "April":"04",
+                   "Mei":"05",
+                   "Juni":"06",
+                   "Juli":"07",
+                   "Agustus":"08",
+                   "September":"09",
+                   "Oktober":"10",
+                   "November":"11",
+                   "Desember":"12"
+                  }
+    date = f"{date_match.group(1)}-{month_dict.get(date_match.group(2), '00')}-{date_match.group(3)}" if date_match else "Tanggal tidak ditemukan"
 
-    # Ekstrak nomor faktur pajak
-    faktur_match = re.search(r'Kode dan Nomor Seri Faktur Pajak:\s*(\d+)', text)
+    faktur_match = re.search(r'Faktur Pajak:\s*(\d+)', text)
     faktur_number = faktur_match.group(1).strip() if faktur_match else "Faktur tidak ditemukan"
 
-    # Ekstrak referensi
-    reference_match = re.search(r'Referensi:\s*([^)]*)', text)
-    reference = reference_match.group(1).strip() if reference_match and reference_match.group(1).strip() else "======Tidak Ada Referensi======"
+    ref_match = re.search(r'Referensi:\s*([^)]*)', text)
+    reference = ref_match.group(1).strip() if ref_match and ref_match.group(1).strip() else "---Tidak Ada Referensi---"
 
-    return partner_name, faktur_number, date, reference
+    return id_tku, partner_name, faktur_number, date, reference
 
-def get_unique_filename(directory, filename):
-    base, ext = os.path.splitext(filename)
-    counter = 1
-    new_filename = filename
-    while os.path.exists(os.path.join(directory, new_filename)):
-        new_filename = f"{base} - {counter}{ext}"
-        counter += 1
-    return new_filename
-
-def rename_pdf_files(input_directory, use_reference, use_faktur, debug=False):
+def rename_pdf_files(input_directory, use_reference, use_faktur):
     output_directory = os.path.join(input_directory, "RenamedPDFs")
-    log_file = os.path.join(input_directory, "log.txt")
+    os.makedirs(output_directory, exist_ok=True)
     
-    if not os.path.exists(output_directory):
-        os.makedirs(output_directory)
-    
-    total_files = len([f for f in os.listdir(input_directory) if f.endswith('.pdf')])
+    pdf_files = [f for f in os.listdir(input_directory) if f.endswith('.pdf')]
+    total_files = len(pdf_files)
     processed_files = 0
     error_files = 0
     
-    with open(log_file, "a", encoding="utf-8") as log:
-        log.write(f"\nLog proses pada {datetime.now()}\n")
-        log.write("======================================\n")
+    log_message(f"Total file ditemukan: {total_files}", Fore.CYAN)
     
-    print(Fore.CYAN + "\n================= Proses Dimulai =================")
-    print(f"Total file ditemukan: {total_files}\n")
-    
-    for filename in os.listdir(input_directory):
-        if filename.endswith('.pdf'):
-            pdf_path = os.path.join(input_directory, filename)
-            try:
-                partner_name, faktur_number, date, reference = extract_info_from_pdf(pdf_path, debug)
-
-                # Bangun nama file berdasarkan mode
-                parts = [partner_name]
-
-                if use_faktur == 'Y':
-                    parts.append(faktur_number)
-
-                parts.append(date)
-
-                if use_reference == 'Y':
-                    parts.append(reference)
-
-                new_filename = " ".join(parts) + ".pdf"
-                unique_filename = get_unique_filename(output_directory, new_filename)
-                new_pdf_path = os.path.join(output_directory, unique_filename)
+    for filename in pdf_files:
+        pdf_path = os.path.join(input_directory, filename)
+        try:
+            id_tku, partner_name, faktur_number, date, reference = extract_info_from_pdf(pdf_path)
+            
+            if not id_tku:
+                log_message(f"ID TKU tidak ditemukan di {filename}, dilewati.", Fore.YELLOW)
+                continue
                 
-                shutil.copy(pdf_path, new_pdf_path)
-                processed_files += 1
-                print(Fore.GREEN + f"✔ Berhasil: {filename} -> {unique_filename}")
-                with open(log_file, "a", encoding="utf-8") as log:
-                    log.write(f"✔ {filename} -> {unique_filename}\n")
-            except Exception as e:
-                error_files += 1
-                print(Fore.RED + f"✖ Error processing {filename}: {e}")
-                with open(log_file, "a", encoding="utf-8") as log:
-                    log.write(f"✖ Error {filename}: {e}\n")
+            tku_folder = os.path.join(output_directory, id_tku)
+            os.makedirs(tku_folder, exist_ok=True)
+            
+            parts = [partner_name]
+            if use_faktur == 'Y':
+                parts.append(faktur_number)
+            parts.append(date)
+            if use_reference == 'Y':
+                parts.append(reference)
+            
+            new_filename = " ".join(parts) + ".pdf"
+            dest_path = os.path.join(tku_folder, new_filename)
+            
+            counter = 1
+            while os.path.exists(dest_path):
+                new_filename = f"{' '.join(parts)} ({counter}).pdf"
+                dest_path = os.path.join(tku_folder, new_filename)
+                counter += 1
+            
+            shutil.copy(pdf_path, dest_path)
+            processed_files += 1
+            
+            # Format log khusus
+            log_message(f"✅ Berhasil: {filename}", Fore.GREEN)
+            log_message(f"🚀 Dipidahkan : {new_filename}", Fore.CYAN, include_timestamp=True)
+            log_message(f"📁 Folder : {id_tku}", Fore.YELLOW, include_timestamp=True)
+            log_message("", include_timestamp=False)  # Baris kosong
+            
+        except Exception as e:
+            error_files += 1
+            log_message(f"Error processing {filename}: {str(e)}", Fore.RED)
     
-    print(Fore.CYAN + "\n================= Proses Selesai =================")
-    print(Fore.YELLOW + f"Total sampel: {total_files}")
-    print(Fore.GREEN + f"Total diproses: {processed_files}")
-    print(Fore.RED + f"Total error: {error_files}")
+     # Format hasil akhir di CMD
+    print(Fore.CYAN + "\n📊 Hasil Akhir:")
+    print(Fore.CYAN + f"📝 Total sampel   : {total_files}")
+    print(Fore.GREEN + f"✅ Total diproses : {processed_files}")
+    print(Fore.RED + f"❌ Total error    : {error_files}\n")
+    time.sleep(1)
+    print(Fore.CYAN + "🤗 Jika Skrip ini bermanfaat dengan senang hati")
+    print(Fore.CYAN + "🎁 Donasi DANA/GOPAY/ShopeePay/Ovo : 0857-0405-0405")
+    print(Fore.CYAN + "😄 Atau bisa scan QRIS yang ada di https://bit.ly/kiyuris")
+    
+    # Format hasil akhir
+    with open(LOG_FILE, "a", encoding="utf-8") as log_file:
+        log_file.write("\nHasil Akhir:\n")
+        log_file.write("    Total sampel    : {}\n".format(total_files))
+        log_file.write("    Total diproses    : {}\n".format(processed_files))
+        log_file.write("    Total error    : {}\n\n".format(error_files))
+        log_file.write("END\n\n")
 
 def main():
     welcome_message()
-
-    use_reference = input(Fore.BLUE + "Apakah kamu ingin pakai referensi atau tidak? (Y/N) (Default Y): ").strip().upper()
-    if use_reference not in ['Y', 'N', '']:
-        print(Fore.RED + "Mode tidak valid. Pilih Y atau N.")
-        return
-    if use_reference == '':
-        use_reference = 'Y'  # Default Y
-
-    use_faktur = input(Fore.BLUE + "Apakah kamu ingin pakai nomor faktur atau tidak? (Y/N) (Default Y): ").strip().upper()
-    if use_faktur not in ['Y', 'N', '']:
-        print(Fore.RED + "Mode tidak valid. Pilih Y atau N.")
-        return
-    if use_faktur == '':
-        use_faktur = 'Y'  # Default Y
-
-    input_directory = input(Fore.BLUE + "Masukkan path direktori input: ")
+    input_directory = input(Fore.MAGENTA + "Masukkan path folder tempat file PDF: ").strip()
     
-    if not os.path.exists(input_directory):
-        print(Fore.RED + f"Direktori '{input_directory}' tidak ditemukan.")
+    if not os.path.isdir(input_directory):
+        log_message("Path tidak valid, pastikan benar!", Fore.RED)
         return
     
-    rename_pdf_files(input_directory, use_reference, use_faktur, debug=False)
+    use_reference = input(Fore.MAGENTA + "Apakah ingin pakai referensi? (Y/N) (Default Y): ").strip().upper() or 'Y'
+    use_faktur = input(Fore.MAGENTA + "Apakah ingin pakai nomor faktur? (Y/N) (Default Y): ").strip().upper() or 'Y'
+    
+    rename_pdf_files(input_directory, use_reference, use_faktur)
 
 if __name__ == "__main__":
     main()
