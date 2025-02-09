@@ -9,8 +9,6 @@ PDF Renamer adalah sebuah script Python yang digunakan untuk mengganti nama file
 
 - Log File: Menyimpan catatan proses renaming dalam file log.txt.
 
-- Mode Debugging: Menampilkan teks mentah dari PDF untuk analisis jika diaktifkan.
-
 - Penanganan Nama File Duplikat: Jika nama file yang baru sudah ada, maka ditambahkan angka -2, -3, dan seterusnya.
 
 - Dukungan Multi-Halaman: Bisa membaca dokumen PDF yang memiliki lebih dari 1 halaman.
