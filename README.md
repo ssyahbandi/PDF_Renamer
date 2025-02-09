@@ -22,7 +22,7 @@ JIka ada kendala silahkan hubungi saya di [Whatsapp](https://wa.me/6285155018808
 
 1. Install Python (jika belum terpasang)
 
-   - Pastikan Python 3.8 atau versi yang lebih baru sudah terinstal di sistem kamu. Bisa dicek dengan perintah: (Buka CMD kemudian tekan (Windows + R) lalu ketik CMD)
+   - Pastikan Python 3.8 atau versi yang lebih baru sudah terinstal di sistem kamu. Bisa dicek dengan perintah: (Buka CMD dengan menekan (Windows + R) lalu ketik CMD)
 
    - ```python --version```
   
