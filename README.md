@@ -129,6 +129,6 @@ B : Jangan yaa, ini bikinnya susah, kamu pake aja :( , itu juga buat penanda sup
 
 A : yaudah iya
 
-B : (Expresi Pembuat) :
+B : Terimakasih ya, (Expresi si pembuat setelah mendengar hal itu :)
    
-![GXk2JscakAAu1s8](https://github.com/user-attachments/assets/2c201978-12d3-49f7-9e15-900a2144b505)
+![GXk2JscakAAu1s8](https://github.com/user-attachments/assets/24e760e6-2950-4663-864c-56c9f4b85c35)
