@@ -119,6 +119,8 @@ def rename_pdf_files(input_directory, use_reference, use_faktur):
     print(Fore.GREEN + f"✅ Total diproses : {processed_files}")
     print(Fore.RED + f"❌ Total error    : {error_files}\n")
     time.sleep(1)
+    print(Fore.GREEN + "✍ Selesai")
+    time.sleep(1)
     print(Fore.CYAN + "🤗 Jika Skrip ini bermanfaat dengan senang hati")
     print(Fore.CYAN + "🎁 Donasi scan QRIS Link : https://bit.ly/kiyuris")
     print(Fore.CYAN + "😄 Terimakasih")
