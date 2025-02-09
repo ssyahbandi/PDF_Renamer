@@ -119,7 +119,7 @@ Pastikan folder input berisi file PDF yang valid.
 
 ## 📌 Lisensi
 
-Script ini bersifat open-source, silakan digunakan dan dimodifikasi sesuai kebutuhan. 🚀
+Script ini bersifat open-source, silakan digunakan dan dimodifikasi sesuai kebutuhan. Tapi selalu ingat source-code nya ya :( 🚀
 
 ## Lainnya
 
