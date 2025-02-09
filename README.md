@@ -3,6 +3,9 @@ PDF Renamer adalah sebuah script Python yang digunakan untuk mengganti nama file
 
 JIka ada kendala silahkan hubungi saya di [Whatsapp](https://wa.me/6285155018808)
 
+   ![Screenshot 2025-02-09 124627](https://github.com/user-attachments/assets/3859d8fd-2717-47b7-9cb1-be16a7456124)
+
+
 ## 📌 Fitur
 
 - Ekstraksi Informasi Otomatis: Mengambil nama lawan transaksi, tanggal, dan nomor referensi dari dokumen PDF.
