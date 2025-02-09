@@ -17,17 +17,21 @@ PDF Renamer adalah sebuah script Python yang digunakan untuk mengganti nama file
 
 1. Install Python (jika belum terpasang)
 
-   - Pastikan Python 3.8 atau versi yang lebih baru sudah terinstal di sistem kamu. Bisa dicek dengan perintah:
+   - Pastikan Python 3.8 atau versi yang lebih baru sudah terinstal di sistem kamu. Bisa dicek dengan perintah: (Buka CMD kemudian tekan (Windows + R) lalu ketik CMD)
 
    - ```python --version```
 
    - Jika belum ada, download dan install dari [python.org](https://www.python.org/downloads/)
+  
+   - Setelah unduhan selesai, buka file installer yang telah diunduh.
+     
+   - Pastikan untuk mencentang opsi **"Add Python to PATH"** sebelum mengklik "Install Now". Ini akan memudahkan Anda untuk menjalankan Python dari command prompt.
 
 3. Clone Repository
 
     - ```git clone https://github.com/ssyahbandi/PDF_Renamer.git```
 
-    - ```cd PDF-Renamer```
+    - ```cd PDF_Renamer```
 
 3. Install Dependencies
 
@@ -48,9 +52,11 @@ PDF Renamer adalah sebuah script Python yang digunakan untuk mengganti nama file
 
 2. Masukkan path folder yang berisi file PDF faktur pajak.
 
-3. Script akan memproses semua file PDF dalam folder tersebut.
+   
 
-4. Hasil rename akan disimpan di folder RenamedPDFs.
+4. Script akan memproses semua file PDF dalam folder tersebut.
+
+5. Hasil rename akan disimpan di folder RenamedPDFs.
 
    - Jika ingin menjalankan mode debugging:
 
