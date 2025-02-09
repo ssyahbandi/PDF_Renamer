@@ -120,3 +120,15 @@ Pastikan folder input berisi file PDF yang valid.
 ## 📌 Lisensi
 
 Script ini bersifat open-source, silakan digunakan dan dimodifikasi sesuai kebutuhan. 🚀
+
+## Lainnya
+
+A : Boleh diganti ga nama yang ada di Skrip ? 
+
+B : Jangan yaa, ini bikinnya susah, kamu pake aja :( , itu juga buat penanda supaya orang lain bisa menghargai,
+
+A : yaudah iya
+
+B : (Expresi Pembuat) :
+   
+![GXk2JscakAAu1s8](https://github.com/user-attachments/assets/2c201978-12d3-49f7-9e15-900a2144b505)
