@@ -131,4 +131,4 @@ A : yaudah iya
 
 B : Terimakasih ya, (Expresi si pembuat setelah mendengar hal itu :)
    
-![GXk2JscakAAu1s8](https://github.com/user-attachments/assets/24e760e6-2950-4663-864c-56c9f4b85c35)
+![1388138](https://github.com/user-attachments/assets/dd877119-bbbb-45af-a974-0e74610ac478)
