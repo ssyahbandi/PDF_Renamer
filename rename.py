@@ -22,6 +22,7 @@ def welcome_message():
     print(Fore.MAGENTA + "==============================================")
     print(Fore.CYAN + "✨ Selamat Datang di PDF Renamer ✨")
     print(Fore.CYAN + "📜 Script by Syahbandi")
+    print(Fore.CYAN + "🌐 Original Repositori : https://github.com/ssyahbandi/PDF_Renamer")
     print(Fore.CYAN + "🖥️ Jika ada kendala silahkan hubungi saya di nomor WA 0851-5501-8808")
     print(Fore.MAGENTA + "==============================================")
     time.sleep(2)
