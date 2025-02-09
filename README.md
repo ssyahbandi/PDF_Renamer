@@ -121,7 +121,7 @@ Pastikan folder input berisi file PDF yang valid.
 
 Script ini bersifat open-source, silakan digunakan dan dimodifikasi sesuai kebutuhan. Tapi selalu ingat source-code nya ya :( 🚀
 
-## Lainnya
+## ⛔ Lainnya ⛔
 
 A : Boleh diganti ga nama yang ada di Skrip ? 
 
