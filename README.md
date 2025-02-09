@@ -93,7 +93,7 @@ JIka ada kendala silahkan hubungi saya di [Whatsapp](https://wa.me/6285155018808
 
      ![image](https://github.com/user-attachments/assets/004c8131-4e37-467a-aae8-fcdbd80b2f40)
 
-4. Script akan memproses semua file PDF dalam folder tersebut.
+3. Script akan memproses semua file PDF dalam folder tersebut.
 
    ![image](https://github.com/user-attachments/assets/5c5fb383-7cc2-4f16-8578-260021796125)
 
@@ -102,11 +102,11 @@ JIka ada kendala silahkan hubungi saya di [Whatsapp](https://wa.me/6285155018808
    ![image](https://github.com/user-attachments/assets/82ef609c-b688-4491-9f48-07df9806d10f)
 
 
-5. Hasil rename akan disimpan di folder RenamedPDFs/Nomor IDTKU.
+4. Hasil rename akan disimpan di folder RenamedPDFs/Nomor IDTKU.
 
- ![image](https://github.com/user-attachments/assets/ad6086c8-0a24-4fda-b46c-3e5dbb35bf75)
+   ![image](https://github.com/user-attachments/assets/ad6086c8-0a24-4fda-b46c-3e5dbb35bf75)
 
-6. Output hasil PDF yang sudah di Rename adalah
+5. Output hasil PDF yang sudah di Rename adalah
 
    ***PT Abc Def 04002500015206238 01/01/2025 INV-CV2501001***
 
