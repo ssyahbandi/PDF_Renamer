@@ -21,7 +21,7 @@ def log_message(message, color=Fore.WHITE, include_timestamp=True):
 def welcome_message():
     print(Fore.MAGENTA + "==============================================")
     print(Fore.CYAN + "✨ Selamat Datang di PDF Renamer ✨")
-    print(Fore.CYAN + "📜 Script by Syahbandi - PT BBN SURABAYA")
+    print(Fore.CYAN + "📜 Script by Syahbandi")
     print(Fore.MAGENTA + "==============================================")
     time.sleep(2)
 
@@ -118,8 +118,9 @@ def rename_pdf_files(input_directory, use_reference, use_faktur):
     print(Fore.RED + f"❌ Total error    : {error_files}\n")
     time.sleep(1)
     print(Fore.CYAN + "🤗 Jika Skrip ini bermanfaat dengan senang hati")
-    print(Fore.CYAN + "🎁 Donasi DANA/GOPAY/ShopeePay/Ovo : 0857-0405-0405")
-    print(Fore.CYAN + "😄 Atau bisa scan QRIS yang ada di https://bit.ly/kiyuris")
+    print(Fore.CYAN + "🎁 Donasi scan QRIS yang ada di https://bit.ly/kiyuris")
+    print(Fore.CYAN + "🖥️ Jika ada kendala silahkan hubungi saya di nomor WA 0851-5501-8808")
+    print(Fore.CYAN + "😄 Terimakasih")
     
     # Format hasil akhir
     with open(LOG_FILE, "a", encoding="utf-8") as log_file:
