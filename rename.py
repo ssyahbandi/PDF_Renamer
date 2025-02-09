@@ -22,6 +22,7 @@ def welcome_message():
     print(Fore.MAGENTA + "==============================================")
     print(Fore.CYAN + "✨ Selamat Datang di PDF Renamer ✨")
     print(Fore.CYAN + "📜 Script by Syahbandi")
+    print(Fore.CYAN + "🖥️ Jika ada kendala silahkan hubungi saya di nomor WA 0851-5501-8808")
     print(Fore.MAGENTA + "==============================================")
     time.sleep(2)
 
@@ -119,7 +120,6 @@ def rename_pdf_files(input_directory, use_reference, use_faktur):
     time.sleep(1)
     print(Fore.CYAN + "🤗 Jika Skrip ini bermanfaat dengan senang hati")
     print(Fore.CYAN + "🎁 Donasi scan QRIS yang ada di https://bit.ly/kiyuris")
-    print(Fore.CYAN + "🖥️ Jika ada kendala silahkan hubungi saya di nomor WA 0851-5501-8808")
     print(Fore.CYAN + "😄 Terimakasih")
     
     # Format hasil akhir
