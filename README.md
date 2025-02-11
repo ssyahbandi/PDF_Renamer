@@ -18,7 +18,7 @@ JIka ada kendala silahkan hubungi saya di [Whatsapp](https://wa.me/6285155018808
 
 - Dukungan Multi-Halaman: Bisa membaca dokumen PDF yang memiliki lebih dari 1 halaman.
 
-## 🛠️ Instalasi
+## 🛠️ Instalasi (Hanya untuk perama kali, selanjutnya langsung di Cara Penggunaan)
 
 1. Install Python (jika belum terpasang)
 
