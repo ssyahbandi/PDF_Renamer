@@ -113,11 +113,17 @@ def process_pdfs(input_directory):
     print(Fore.RED + f"❌ Total error           : {error_files}\n")
     time.sleep(1)
     print(Fore.GREEN + "✨ Selesai")
+    time.sleep(1)
+    print(Fore.CYAN + "🤗 Jika Skrip ini bermanfaat dengan senang hati")
+    print(Fore.CYAN + "🎁 Donasi scan QRIS Link : https://bit.ly/kiyuris")
+    print(Fore.CYAN + "😄 Terimakasih")
 
 def main():
     print(Fore.MAGENTA + "==============================================")
     print(Fore.CYAN + "✨ PDF Processor by Syahbandi ✨")
     print(Fore.CYAN + "📜 Script ini akan menggabungkan PDF berdasarkan ID TKU Penjual dan lawan transaksi")
+    print(Fore.CYAN + "🌐 Original Repositori : https://github.com/ssyahbandi/PDF_Renamer")
+    print(Fore.CYAN + "🖥️ Jika ada kendala silahkan hubungi saya di nomor WA 0851-5501-8808")
     print(Fore.MAGENTA + "==============================================")
 
     input_directory = input(Fore.MAGENTA + "Masukkan path folder tempat file PDF: ").strip()
