@@ -1,6 +1,8 @@
 # PDF Renamer (SUDAH ADA VERSI WEB NYA Di [SINI](https://mikhailovna.com/)
 PDF Renamer adalah sebuah script Python yang digunakan untuk mengganti nama file PDF faktur pajak secara otomatis berdasarkan informasi yang diekstrak dari isi dokumen.
 
+Atau solusi lebih praktis versi WEB di [SINI](https://mikhailovna.com/)
+
 JIka ada kendala silahkan hubungi saya di [Whatsapp](https://wa.me/6285155018808)
 
    ![Screenshot 2025-02-09 124627](https://github.com/user-attachments/assets/3859d8fd-2717-47b7-9cb1-be16a7456124)
