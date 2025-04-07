@@ -1,17 +1,1 @@
-const buttons = document.querySelectorAll('#DownloadButton');
-let delay = 2000; // 2000 mili detik atau 2 detik, ubah bila perlu.
-
-buttons.forEach((button, index) => {
-  setTimeout(() => {
-    if (button && button.click) {
-      try {
-        button.click();
-        console.log(`PDF ${index + 1} telah terunduh.`);
-      } catch (error) {
-        console.error(`Gagal mengunduh PDF ${index + 1}:`, error);
-      }
-    } else {
-      console.warn(`Tombol dengan indeks ${index} tidak dapat diklik.`);
-    }
-  }, delay * index);
-});
+javascript:(function(){function waitForElement(selector,timeout=5000){return new Promise((resolve,reject)=>{const start=Date.now();(function check(){const element=document.querySelector(selector);if(element){resolve(element);}else if(Date.now()-start>=timeout){reject(new Error("Timeout: Tombol download tidak ditemukan, pastikan Faktur sudah Approved"));}else{requestAnimationFrame(check);}})();});}async function downloadAllPDFs(){try{await waitForElement("#DownloadButton",10000);const buttons=document.querySelectorAll("#DownloadButton");if(buttons.length===0){throw new Error("No download buttons found");}buttons.forEach(button=>{if(button&&button.offsetParent!==null){button.click();}});setTimeout(()=>{alert("Download selesai, Support kami dengan Subscribe Channel XMedia");},2000);}catch(error){console.error("Error saat Download :",error);alert("Error: " + error.message);}}downloadAllPDFs();})();
