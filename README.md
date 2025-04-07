@@ -1,4 +1,4 @@
-#UPDATE
+# UPDATE (07/04/2025)
 Pakai Renameged.py kalo mau langsung rename + merged nama yang sama
 Pakai rename.py kalo mau per nama LT dan bisa costum No Inv + No FP + Tanggal
 
