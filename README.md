@@ -1,3 +1,7 @@
+#UPDATE
+Pakai Renameged.py kalo mau langsung rename + merged nama yang sama
+Pakai rename.py kalo mau per nama LT dan bisa costum No Inv + No FP + Tanggal
+
 # PDF Renamer 
 PDF Renamer adalah sebuah script Python yang digunakan untuk mengganti nama file PDF faktur pajak secara otomatis berdasarkan informasi yang diekstrak dari isi dokumen.
 
