@@ -1,3 +1,6 @@
+# UPDATE (09/04/2025)
+Sudah ada file renamerged.exe tinggal run aja jadi ngga ribet
+
 # UPDATE (07/04/2025)
 Pakai renamerged.py kalo mau langsung rename + merged nama yang sama
 
