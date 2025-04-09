@@ -1,2 +1,5 @@
-pdfplumber==0.11.5
-colorama==0.4.6
+# requirements.txt
+pdfplumber
+PyPDF2
+colorama
+customtkinter  # Tambah customtkinter
