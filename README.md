@@ -1,6 +1,8 @@
 # Renamerged 📜✨
 
-Halo, selamat datang di **Renamerged**! 🎉 Aplikasi ini adalah solusi praktis untuk kamu yang sering ribet ngurusin file PDF, terutama dokumen pajak atau transaksi bisnis. Renamerged (singkatan dari **Rename-Merged**) dirancang untuk **rename** dan **merge** file PDF secara otomatis berdasarkan ID TKU Penjual dan Nama Lawan Transaksi. Dengan Renamerged, dokumenmu bakal rapi terorganisir tanpa harus kerja manual lagi! 🚀
+Halo, temen-temen! Selamat datang di **Renamerged**! 🎉 Aplikasi ini adalah solusi praktis buat kamu yang sering pusing ngurusin file PDF, apalagi dokumen pajak atau transaksi bisnis yang numpuk. Renamerged (singkatan dari **Rename-Merged**) dirancang untuk **rename** dan **merge** file PDF secara otomatis berdasarkan ID TKU Penjual dan Nama Lawan Transaksi. Dengan Renamerged, dokumenmu bakal rapi terorganisir tanpa harus kerja manual yang bikin capek! 😍
+
+Aplikasi ini awalnya cuma proyek kecil buat kebutuhan pribadi, tapi sekarang udah siap dipake sama siapa aja, bahkan buat kamu yang nggak paham coding sekalipun! 💻 Yuk, simak lebih lanjut apa yang bisa Renamerged lakuin buat kamu! 🌟
 
 ## Apa Itu Renamerged? 🤔💡
 Renamerged adalah alat kecil yang aku buat untuk membantu mengelola file PDF dengan cara yang super efisien. Bayangin, kamu punya ratusan PDF dengan ID TKU Penjual dan Nama Partner yang berbeda-beda. Kalau rename satu-satu, bisa seharian! 😅 Nah, Renamerged bakal bantu:  
@@ -8,15 +10,16 @@ Renamerged adalah alat kecil yang aku buat untuk membantu mengelola file PDF den
 - **Merge PDF yang Sama** 📚: Kalau ada beberapa PDF dengan ID TKU Penjual dan Nama Partner yang sama, Renamerged bakal gabungin semua file itu jadi satu PDF rapi.  
 - **Organisasi File** 🗂️: Semua hasil disimpan di folder `ProcessedPDFs`, diorganisir berdasarkan ID TKU Penjual, jadi gampang dicari kapan aja.  
 
-Aplikasi ini awalnya cuma proyek kecil buat kebutuhan pribadi, tapi sekarang udah siap dipake sama siapa aja, bahkan buat kamu yang nggak paham coding sekalipun! 💻
+Aplikasi ini cocok banget buat kamu yang sering deal sama dokumen pajak, transaksi bisnis, atau file PDF yang butuh dirapiin. Renamerged bakal bikin hidupmu lebih mudah, tanpa harus kerja manual lagi! 🚀
 
 ## Fitur Unggulan 🌟
-- Rename PDF otomatis berdasarkan ID TKU Penjual dan Nama Lawan Transaksi. 📂  
-- Merge PDF dengan ID TKU yang sama jadi satu file rapi. 📦  
-- Simpan hasil di folder `ProcessedPDFs`, terorganisir berdasarkan ID TKU. 🗄️  
-- Antarmuka sederhana via terminal, nggak perlu setup ribet. 🖥️  
-- Versi executable (`renamerged.exe`) yang tinggal klik, tanpa perlu instal Python! ⚡  
-- Logging cantik pake warna di terminal, plus simpan log ke file `log.txt`. 📋  
+Renamerged punya beberapa fitur keren yang bikin dia beda dari alat lain:  
+- **Rename PDF Otomatis** 📂: Rename file PDF berdasarkan ID TKU Penjual dan Nama Lawan Transaksi, jadi nggak perlu buka file satu-satu.  
+- **Merge PDF yang Sama** 📦: Gabungin semua PDF dengan ID TKU Penjual dan Nama Partner yang sama jadi satu file rapi. Hemat ruang, hemat waktu!  
+- **Organisasi File** 🗄️: Simpan hasil di folder `ProcessedPDFs`, terorganisir berdasarkan ID TKU Penjual, jadi gampang dicari kapan aja.  
+- **Versi Executable** ⚡: Ada `renamerged.exe` yang tinggal klik, nggak perlu instal Python atau library apa pun. Cocok buat pengguna awam!  
+- **Logging Cantik** 📋: Output di terminal pake warna-warni biar gampang dibaca, plus simpan log ke file `log.txt` buat catatan.  
+- **Error Handling** 🛠️: Kalau ada PDF yang gagal dibaca (misalnya corrupt), Renamerged bakal kasih tau, tapi tetap lanjut proses file lain.  
 
 ## Download 📥
 Yuk, download versi terbaru Renamerged di [Releases](https://github.com/ssyahbandi/PDF_Renamer/releases)! 🎁  
@@ -33,6 +36,7 @@ Menggunakan Renamerged itu gampang banget, ikutin langkah ini:
 5. Selesai! Cek hasilnya, semua PDF kamu udah rapi terorganisir berdasarkan ID TKU Penjual. 🎉  
 
 ## Contoh Penggunaan 📈
+Biar lebih jelas, ini contoh gimana Renamerged kerja:  
 Misalnya kamu punya 3 file PDF di folder:  
 - `dokumen1.pdf`: ID TKU = `1234567890123456789012`, Nama Partner = `PT ABC`.  
 - `dokumen2.pdf`: ID TKU = `1234567890123456789012`, Nama Partner = `PT ABC`.  
