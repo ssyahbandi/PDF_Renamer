@@ -97,10 +97,10 @@ Saya sangat terbuka untuk masukan! Jika kamu punya ide fitur baru (misalnya, sor
 
 ## Changelog 📅
 
-### Versi 1.2.0 
+### Versi 1.2.0 (10/04/2024)
 - **GUI** : Fix Bugs
 
-### Versi 1.1.0  
+### Versi 1.1.0 (10/04/2024)
 - **GUI Modern**: Ditambahkan antarmuka grafis dengan progress bar untuk memantau proses. 🖥️  
 - **Pratinjau File** PDF: Menampilkan daftar file PDF yang terdeteksi sebelum diproses. 📄  
 - **Validasi File PDF**: Memeriksa apakah file PDF valid (tidak korup) sebelum diproses. ✅  
@@ -108,7 +108,7 @@ Saya sangat terbuka untuk masukan! Jika kamu punya ide fitur baru (misalnya, sor
 - **Penghapusan Log Proses di GUI**: Log proses di GUI dihapus untuk menyederhanakan tampilan, tetapi tetap disimpan di file log.txt. 📋  
 - **Penjajaran Tombol**: Tombol "Donasi" dan "Ganti Tema" disusun rapi di sisi kanan atas, sejajar dengan tombol "Browse". 🖱️  
 
-### Versi 1.0.0
+### Versi 1.0.0 (09/04/2024)
 - Intial Realese
 - GUI Based
 
