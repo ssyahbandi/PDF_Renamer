@@ -81,8 +81,8 @@ Mudah, bukan? Tidak perlu repot membuka file satu per satu! 😍
 ## Catatan Penting ⚠️
 
 Sebelum menggunakan Renamerged, perhatikan hal berikut:  
-- Keamanan File: File ini 100% aman dan bebas virus! Namun, karena dibuat menggunakan PyInstaller, beberapa antivirus (seperti Windows Defender) mungkin mendeteksi sebagai "false positive". Jangan khawatir, tambahkan ke exclusion:  
-  - Windows Defender: Settings > Virus & Threat Protection > Manage Settings > Add or Remove Exclusions > Tambah renamerged.exe. 🛡️  
+- **Keamanan File**: File ini 100% aman dan bebas virus! Namun, karena dibuat menggunakan ```PyInstaller```, beberapa antivirus (seperti **Windows Defende**r) mungkin mendeteksi sebagai **"false positive"**. Jangan khawatir, tambahkan ke exclusion:  
+  - **Windows Defender**: **Settings** > **Virus & Threat Protection** > **Manage Settings** > **Add or Remove Exclusions** > **Tambah renamerged.exe**. 🛡️  
 - Kendala?: Jika ada masalah saat menggunakan Renamerged, jangan ragu hubungi saya di [Telegram](https://t.me/ssyahbandi). Saya siap membantu kapan saja! 📞  
 
 ## Donasi 🎁
