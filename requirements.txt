@@ -2,4 +2,4 @@
 pdfplumber
 PyPDF2
 colorama
-customtkinter  # Tambah customtkinter
+customtkinter

@@ -1,4 +1,4 @@
-# styles.py
+# src/styles.py
 class Theme:
     def __init__(self):
         # Warna tema gelap modern dengan aksen neon
@@ -16,6 +16,6 @@ class Theme:
         self.donate_hover_bg = "#FF8A80"  # Warna tombol donasi saat hover
 
         # Font modern dengan ukuran lebih besar
-        self.title_font = ("Helvetica", 20, "bold")  # Ukuran lebih besar
-        self.label_font = ("Helvetica", 12)  # Ukuran lebih besar
-        self.button_font = ("Helvetica", 12, "bold")  # Ukuran lebih besar
+        self.title_font = ("Helvetica", 20, "bold")
+        self.label_font = ("Helvetica", 12)
+        self.button_font = ("Helvetica", 12, "bold")
