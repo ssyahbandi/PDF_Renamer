@@ -45,7 +45,7 @@ Yuk, download versi terbaru Renamerged di [Releases](https://github.com/ssyahban
 Ada dua pilihan untukmu:  
 - ```renamerged.exe```: Versi executable dengan GUI, tinggal download dan jalankan. Tidak perlu instal Python atau library apa pun. Cocok untuk pengguna awam! 🖱️  
 - Source Code: Clone repo ini jika kamu ingin melihat atau mengedit kode. Pastikan Python dan library berikut sudah terinstal:  
-  pip install pdfplumber PyPDF2 colorama customtkinter
+  ```pip install pdfplumber PyPDF2 colorama customtkinter```
 
 ## Cara Pakai 🚀
 
