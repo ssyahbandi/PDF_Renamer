@@ -1,17 +1,17 @@
-# gui.py
+# src/gui.py
 import customtkinter as ctk
 import tkinter as tk
 from tkinter import filedialog, messagebox
 import os
 import webbrowser
-from pdf_processor import process_pdfs
-from styles import Theme
+from src.pdf_processor import process_pdfs
+from src.styles import Theme
 
 class RenamergedGUI:
     def __init__(self, root):
         self.root = root
         self.root.title("Renamerged - Rename & Merge PDFs")
-        self.root.geometry("650x500")  # Tambah tinggi jendela dari 450 jadi 500
+        self.root.geometry("650x500")
         self.root.resizable(False, False)
 
         # Inisialisasi tema
@@ -19,7 +19,7 @@ class RenamergedGUI:
         ctk.set_appearance_mode("dark")
         self.root.configure(bg=self.theme.bg)
 
-        # Frame utama dengan scrollbar
+        # Frame utama
         self.main_frame = ctk.CTkFrame(self.root, fg_color=self.theme.bg)
         self.main_frame.pack(fill="both", expand=True)
 
@@ -160,7 +160,7 @@ class RenamergedGUI:
 
         # Frame untuk Tombol
         button_frame = ctk.CTkFrame(self.main_frame, fg_color="transparent")
-        button_frame.pack(pady=20)  # Tambah padding supaya tombol terlihat
+        button_frame.pack(pady=20)
 
         # Tombol Process
         self.process_btn = ctk.CTkButton(

@@ -1,12 +1,12 @@
-# pdf_processor.py
+# src/pdf_processor.py
 import pdfplumber
 import re
 import os
 import shutil
 from PyPDF2 import PdfMerger
-from utils import log_message, Fore
+from src.utils import log_message, Fore
 
-def extract_info_from_pdf(pdf_path, log_callback=None):
+def extract_info_from_pdf(pdf_path):
     """Mengambil nama partner dan ID TKU Penjual dari PDF."""
     with pdfplumber.open(pdf_path) as pdf:
         text = "".join(page.extract_text() + "\n" for page in pdf.pages if page.extract_text())
@@ -21,7 +21,7 @@ def extract_info_from_pdf(pdf_path, log_callback=None):
 
     return id_tku_seller, partner_name
 
-def process_pdfs(input_directory, output_directory=None, log_callback=None):
+def process_pdfs(input_directory, output_directory=None):
     """Memproses file PDF: rename jika 1, merge jika lebih dari 1."""
     if output_directory is None or output_directory.strip() == "":
         output_directory = os.path.join(input_directory, "ProcessedPDFs")
