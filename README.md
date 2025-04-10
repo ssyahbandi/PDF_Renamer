@@ -52,19 +52,19 @@ Ada dua pilihan untukmu:
 Menggunakan Renamerged sangat mudah berkat GUI-nya! Ikuti langkah berikut:  
 1. Download renamerged.exe dari [Releases](https://github.com/ssyahbandi/PDF_Renamer/releases). 📦  atau direct langsung di [Sini](https://github.com/ssyahbandi/PDF_Renamer/releases/download/v1.2.0/renamerged.exe)
 2. Klik dua kali renamerged.exe untuk menjalankan aplikasi. 🖱️
-   - ⚠️**Catatan**⚠️ : Jika muncul pop-up "Windows protected your PC", klik "More info" lalu pilih "Run anyway" untuk melanjutkan. Ini terjadi karena aplikasi belum ditandatangani secara resmi oleh Windows, tapi sangat aman digunakan!
+   - ⚠️**Catatan**⚠️ : Jika muncul pop-up ```"Windows protected your PC"```, klik ```"More info"``` lalu pilih ```"Run anyway"``` untuk melanjutkan. Ini terjadi karena aplikasi belum **ditandatangani secara resmi oleh Windows**, tapi sangat aman digunakan!
 4. Di jendela yang muncul:  
    - Klik "Browse" di bagian "Pilih Folder Input PDF", lalu pilih folder tempat file PDF kamu disimpan ```(contoh: C:/Dokumen/PDF)```. 📂  
-   - Lihat pratinjau daftar file PDF yang terdeteksi di bawah "Daftar File PDF". 👀  
-   - (Opsional) Klik "Browse" untuk pilih folder output tempat hasil disimpan. Jika tidak dipilih, hasil akan disimpan di ProcessedPDFs di folder input. 🗄️  
-   - (Opsional) Klik "Ganti Tema" untuk beralih antara dark/light mode sesuai preferensi visualmu. 🎨  
-5. Klik tombol "Proses" untuk memulai. Progress bar akan menunjukkan kemajuan proses. ✅  
+   - Lihat pratinjau daftar file PDF yang terdeteksi di bawah ```"Daftar File PDF"```. 👀  
+   - (Opsional) Klik ```"Browse"``` untuk pilih folder output tempat hasil disimpan. Jika tidak dipilih, hasil akan disimpan di ProcessedPDFs di folder input. 🗄️  
+   - (Opsional) Klik ```"Ganti Tema"``` untuk beralih antara dark/light mode sesuai preferensi visualmu. 🎨  
+5. Klik tombol ```"Proses"``` untuk memulai. Progress bar akan menunjukkan kemajuan proses. ✅  
 6. Tunggu hingga proses selesai. Renamerged akan:  
    - Memvalidasi file PDF untuk memastikan tidak ada file korup. ✅  
    - Rename file PDF berdasarkan Nama Lawan Transaksi. ✍️  
    - Merge file PDF dengan ID TKU Penjual dan Nama Lawan Transaksi yang sama. 📚  
    - Menyimpan hasil di folder yang terorganisir berdasarkan ID TKU Penjual. 🗂️  
-7. Selesai! Klik "Buka Folder Hasil" untuk melihat hasilnya. Semua PDF kamu sudah rapi terorganisir! 🎉  
+7. Selesai! Klik ```"Buka Folder Hasil"``` untuk melihat hasilnya. Semua PDF kamu sudah rapi terorganisir! 🎉  
 
 ## Contoh Penggunaan 📈
 
