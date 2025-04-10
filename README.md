@@ -70,13 +70,13 @@ Menggunakan Renamerged sangat mudah berkat GUI-nya! Ikuti langkah berikut:
 
 Berikut adalah contoh cara kerja Renamerged:  
 Misalnya kamu punya 3 file PDF di folder:  
-- '''dokumen1.pdf''': ID TKU = 1234567890123456789012, Nama Partner = '''PT ABC'''.  
-- '''dokumen2.pdf''': ID TKU = 1234567890123456789012, Nama Partner = '''PT ABC'''.  
-- '''dokumen3.pdf''': ID TKU = 9876543210987654321098, Nama Partner = '''PT XYZ'''.  
+- dokumen1.pdf: ID TKU = 1234567890123456789012, Nama Partner = PT ABC.  
+- dokumen2.pdf: ID TKU = 1234567890123456789012, Nama Partner = PT ABC.  
+- dokumen3.pdf: ID TKU = 9876543210987654321098, Nama Partner = PT XYZ.  
 
 Setelah menjalankan Renamerged:  
-- '''dokumen1.pdf''' dan '''dokumen2.pdf''' digabung menjadi PT ABC.pdf, disimpan di '''ProcessedPDFs/1234567890123456789012/PT ABC.pdf'''.  
-- '''dokumen3.pdf''' di-rename menjadi '''PT XYZ.pdf''', disimpan di '''ProcessedPDFs/9876543210987654321098/PT XYZ.pdf'''.  
+- dokumen1.pdf dan dokumen2.pdf digabung menjadi PT ABC.pdf, disimpan di ProcessedPDFs/1234567890123456789012/PT ABC.pdf.  
+- dokumen3.pdf di-rename menjadi PT XYZ.pdf, disimpan di ProcessedPDFs/9876543210987654321098/PT XYZ.pdf.  
 
 Mudah, bukan? Tidak perlu repot membuka file satu per satu! 😍
 
@@ -96,6 +96,9 @@ Membuat Renamerged membutuhkan waktu dan usaha, dari coding hingga testing agar 
 Saya sangat terbuka untuk masukan! Jika kamu punya ide fitur baru (misalnya, sortir PDF berdasarkan tanggal) atau menemukan bug, langsung hubungi saya via [Telegram](https://t.me/ssyahbandi). Kamu juga bisa membuka issue di repo ini, saya akan merespons secepat mungkin! 🚀
 
 ## Changelog 📅
+
+### Versi 1.2.0 
+- GUI : Fix Bugs
 
 ### Versi 1.1.0  
 - GUI Modern: Ditambahkan antarmuka grafis dengan progress bar untuk memantau proses. 🖥️  
