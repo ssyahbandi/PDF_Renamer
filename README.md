@@ -1,67 +1,110 @@
-# Renamerged 📜✨
+## Renamerged 😊📜✨
 
-Halo, temen-temen! Selamat datang di **Renamerged**! 🎉 Aplikasi ini adalah solusi praktis buat kamu yang sering pusing ngurusin file PDF, apalagi dokumen pajak atau transaksi bisnis yang numpuk. Renamerged (singkatan dari **Rename-Merged**) dirancang untuk **rename** dan **merge** file PDF secara otomatis berdasarkan ID TKU Penjual dan Nama Lawan Transaksi. Dengan Renamerged, dokumenmu bakal rapi terorganisir tanpa harus kerja manual yang bikin capek! 😍
+Halo, teman-teman! Selamat datang di Renamerged! 🎉 Aplikasi ini adalah solusi praktis untuk kamu yang sering kerepotan mengelola file PDF, terutama dokumen pajak atau transaksi bisnis yang menumpuk. Renamerged (singkatan dari Rename-Merged) dirancang untuk rename dan merge file PDF secara otomatis berdasarkan ID TKU Penjual dan Nama Lawan Transaksi. Dengan Renamerged, dokumenmu akan rapi terorganisir tanpa perlu kerja manual yang melelahkan! 😍
 
-Sekarang Renamerged hadir dengan **GUI modern** yang bikin penggunaan jauh lebih gampang, bahkan buat kamu yang nggak suka ketik-ketik di terminal! 🖥️ Yuk, simak lebih lanjut apa yang bisa Renamerged lakuin buat kamu! 🌟
+Kini, Renamerged hadir dengan GUI modern yang membuat penggunaan jauh lebih mudah, bahkan untuk kamu yang tidak suka mengetik di terminal! 🖥️ Yuk, simak lebih lanjut apa yang bisa Renamerged lakukan untukmu! 🌟
 
-## Apa Itu Renamerged? 🤔💡
-Renamerged adalah alat kecil yang aku buat untuk membantu mengelola file PDF dengan cara yang super efisien. Bayangin, kamu punya ratusan PDF dengan ID TKU Penjual dan Nama Partner yang berbeda-beda. Kalau rename satu-satu, bisa seharian! 😅 Nah, Renamerged bakal bantu:  
-- **Rename File PDF Otomatis** 📝: Aplikasi ini baca isi PDF, ambil ID TKU Penjual (22 digit) dan Nama Lawan Transaksi, lalu ganti nama file PDF-nya sesuai Nama Partner.  
-- **Merge PDF yang Sama** 📚: Kalau ada beberapa PDF dengan ID TKU Penjual dan Nama Partner yang sama, Renamerged bakal gabungin semua file itu jadi satu PDF rapi.  
-- **Organisasi File** 🗂️: Semua hasil disimpan di folder `ProcessedPDFs` (atau folder yang kamu pilih), diorganisir berdasarkan ID TKU Penjual, jadi gampang dicari kapan aja.  
+Apa Itu Renamerged? 🤔💡
 
-Aplikasi ini cocok banget buat kamu yang sering deal sama dokumen pajak, transaksi bisnis, atau file PDF yang butuh dirapiin. Renamerged bakal bikin hidupmu lebih mudah, tanpa harus kerja manual lagi! 🚀
+Renamerged adalah alat sederhana namun powerful yang dibuat untuk membantu mengelola file PDF dengan cara yang efisien. Bayangkan, kamu punya ratusan PDF dengan ID TKU Penjual dan Nama Partner yang berbeda-beda. Jika harus rename satu per satu, bisa memakan waktu seharian! 😅 Renamerged hadir untuk membantu:  
+- Rename File PDF Otomatis 📝: Aplikasi ini membaca isi PDF, mengambil ID TKU Penjual (22 digit) dan Nama Lawan Transaksi, lalu mengganti nama file PDF sesuai Nama Partner.  
+- Merge PDF yang Sama 📚: Jika ada beberapa PDF dengan ID TKU Penjual dan Nama Partner yang sama, Renamerged akan menggabungkan semua file tersebut menjadi satu PDF yang rapi.  
+- Organisasi File 🗂️: Semua hasil disimpan di folder ProcessedPDFs (atau folder yang kamu pilih), diorganisir berdasarkan ID TKU Penjual, sehingga mudah dicari kapan saja.  
+
+Aplikasi ini sangat cocok untuk kamu yang sering menangani dokumen pajak, transaksi bisnis, atau file PDF yang perlu dirapikan. Renamerged akan membuat hidupmu lebih mudah tanpa harus bekerja manual lagi! 🚀
 
 ## Fitur Unggulan 🌟
-Renamerged punya beberapa fitur keren yang bikin dia beda dari alat lain:  
-- **GUI Modern** 🖥️: Antarmuka grafis yang gampang dipake, dengan desain futuristik, tombol rounded, dan animasi loading yang bikin proses terlihat hidup!  
-- **Rename PDF Otomatis** 📂: Rename file PDF berdasarkan ID TKU Penjual dan Nama Lawan Transaksi, jadi nggak perlu buka file satu-satu.  
-- **Merge PDF yang Sama** 📦: Gabungin semua PDF dengan ID TKU Penjual dan Nama Partner yang sama jadi satu file rapi. Hemat ruang, hemat waktu!  
-- **Organisasi File** 🗄️: Simpan hasil di folder `ProcessedPDFs` (atau folder pilihanmu), terorganisir berdasarkan ID TKU Penjual.  
-- **Versi Executable** ⚡: Ada `renamerged.exe` yang tinggal klik, nggak perlu instal Python atau library apa pun. Cocok buat pengguna awam!  
-- **Logging Cantik** 📋: Output di terminal pake warna-warni biar gampang dibaca, plus simpan log ke file `log.txt` buat catatan.  
-- **Error Handling** 🛠️: Kalau ada PDF yang gagal dibaca (misalnya corrupt), Renamerged bakal kasih tau, tapi tetap lanjut proses file lain.  
-- **Tombol Donasi** 💖: Dukung pengembangan proyek ini dengan donasi via tombol di GUI!  
+
+Renamerged dilengkapi dengan fitur-fitur keren yang membuatnya unggul:  
+- GUI Modern 🖥️: Antarmuka grafis yang intuitif dengan desain futuristik, tombol rounded, dan progress bar untuk memantau proses.  
+- Pratinjau File PDF 📄: Lihat daftar file PDF yang akan diproses sebelum memulai, sehingga kamu bisa memastikan file yang tepat.  
+- Rename PDF Otomatis 📂: Rename file PDF berdasarkan ID TKU Penjual dan Nama Lawan Transaksi tanpa perlu membuka file satu per satu.  
+- Merge PDF yang Sama 📦: Gabungkan semua PDF dengan ID TKU Penjual dan Nama Partner yang sama menjadi satu file rapi. Hemat ruang, hemat waktu!  
+- Organisasi File 🗄️: Simpan hasil di folder ProcessedPDFs (atau folder pilihanmu), terorganisir berdasarkan ID TKU Penjual.  
+- Validasi File PDF ✅: Aplikasi memeriksa apakah file PDF valid (tidak korup) sebelum diproses, mencegah error selama pemrosesan.  
+- Kustomisasi Tema 🎨: Pilih tema dark atau light mode untuk pengalaman visual yang lebih nyaman.  
+- Versi Executable ⚡: Tersedia renamerged.exe yang tinggal klik, tanpa perlu instal Python atau library apa pun. Cocok untuk pengguna awam! 🖱️  
+- Logging Cantik 📋: Output di terminal menggunakan warna-warni agar mudah dibaca, plus simpan log ke file log.txt untuk catatan.  
+- Error Handling 🛠️: Jika ada PDF yang gagal dibaca (misalnya korup), Renamerged akan memberi tahu, tetapi tetap melanjutkan proses file lain.  
+- Tombol Donasi 💖: Dukung pengembangan proyek ini dengan donasi via tombol di GUI!  
+
+## Sistem Persyaratan 🖥️
+
+Untuk versi executable (renamerged.exe):  
+- Sistem Operasi: Windows 10 atau lebih baru (versi macOS/Linux akan menyusul). 😊  
+- RAM: Minimal 2 GB.  
+- Penyimpanan: Minimal 50 MB ruang kosong untuk aplikasi dan file log. 📂  
+- Catatan: Pastikan antivirus tidak memblokir renamerged.exe (lihat bagian "Catatan Penting").  
+
+Untuk menjalankan source code:  
+- Python: Versi 3.8 atau lebih baru. 🐍  
+- Library: pdfplumber, PyPDF2, colorama, customtkinter.  
 
 ## Download 📥
+
 Yuk, download versi terbaru Renamerged di [Releases](https://github.com/ssyahbandi/PDF_Renamer/releases)! 🎁  
-Ada dua pilihan buat kamu:  
-- **`renamerged.exe`**: Versi executable dengan GUI, tinggal download dan run. Nggak perlu instal Python atau library apa pun. Cocok banget buat pengguna awam! 🖱️  
-- **Source code**: Clone repo ini kalau kamu mau lihat atau edit kode. Pastikan Python dan library (`pdfplumber`, `PyPDF2`, `colorama`, `customtkinter`) udah terinstal. 🖥️  
+Ada dua pilihan untukmu:  
+- renamerged.exe: Versi executable dengan GUI, tinggal download dan jalankan. Tidak perlu instal Python atau library apa pun. Cocok untuk pengguna awam! 🖱️  
+- Source Code: Clone repo ini jika kamu ingin melihat atau mengedit kode. Pastikan Python dan library berikut sudah terinstal:  
+  pip install pdfplumber PyPDF2 colorama customtkinter
 
 ## Cara Pakai 🚀
-Menggunakan Renamerged sekarang jauh lebih gampang berkat GUI-nya! Ikutin langkah ini:  
-1. Download `renamerged.exe` dari [Releases](https://github.com/ssyahbandi/PDF_Renamer/releases). 📦  
-2. Klik 2x `renamerged.exe` buat jalanin aplikasinya. 🖱️  
-3. Di jendela yang muncul, klik "Browse" di bagian "Pilih Folder PDF", lalu pilih folder tempat file PDF kamu disimpan (contoh: `C:/Dokumen/PDF`). 📂  
-4. (Opsional) Klik "Browse" untuk pilih folder output tempat hasil disimpan. Kalau nggak pilih, hasil bakal disimpan di `ProcessedPDFs` di folder input. 🗄️  
-5. Klik tombol "Process PDFs", tunggu bentar, Renamerged bakal kerja otomatis: rename file PDF, merge kalau ada yang sama, dan simpan hasilnya. ✅  
-6. Selesai! Cek hasilnya, semua PDF kamu udah rapi terorganisir berdasarkan ID TKU Penjual. 🎉  
+
+Menggunakan Renamerged sangat mudah berkat GUI-nya! Ikuti langkah berikut:  
+1. Download renamerged.exe dari [Releases](https://github.com/ssyahbandi/PDF_Renamer/releases). 📦  
+2. Klik dua kali renamerged.exe untuk menjalankan aplikasi. 🖱️  
+3. Di jendela yang muncul:  
+   - Klik "Browse" di bagian "Pilih Folder Input PDF", lalu pilih folder tempat file PDF kamu disimpan (contoh: C:/Dokumen/PDF). 📂  
+   - Lihat pratinjau daftar file PDF yang terdeteksi di bawah "Daftar File PDF". 👀  
+   - (Opsional) Klik "Browse" untuk pilih folder output tempat hasil disimpan. Jika tidak dipilih, hasil akan disimpan di ProcessedPDFs di folder input. 🗄️  
+   - (Opsional) Klik "Ganti Tema" untuk beralih antara dark/light mode sesuai preferensi visualmu. 🎨  
+4. Klik tombol "Proses" untuk memulai. Progress bar akan menunjukkan kemajuan proses. ✅  
+5. Tunggu hingga proses selesai. Renamerged akan:  
+   - Memvalidasi file PDF untuk memastikan tidak ada file korup. ✅  
+   - Rename file PDF berdasarkan Nama Partner. ✍️  
+   - Merge file PDF dengan ID TKU Penjual dan Nama Partner yang sama. 📚  
+   - Menyimpan hasil di folder yang terorganisir berdasarkan ID TKU Penjual. 🗂️  
+6. Selesai! Klik "Buka Folder Hasil" untuk melihat hasilnya. Semua PDF kamu sudah rapi terorganisir! 🎉  
 
 ## Contoh Penggunaan 📈
-Biar lebih jelas, ini contoh gimana Renamerged kerja:  
+
+Berikut adalah contoh cara kerja Renamerged:  
 Misalnya kamu punya 3 file PDF di folder:  
-- `dokumen1.pdf`: ID TKU = `1234567890123456789012`, Nama Partner = `PT ABC`.  
-- `dokumen2.pdf`: ID TKU = `1234567890123456789012`, Nama Partner = `PT ABC`.  
-- `dokumen3.pdf`: ID TKU = `9876543210987654321098`, Nama Partner = `PT XYZ`.  
+- dokumen1.pdf: ID TKU = 1234567890123456789012, Nama Partner = PT ABC.  
+- dokumen2.pdf: ID TKU = 1234567890123456789012, Nama Partner = PT ABC.  
+- dokumen3.pdf: ID TKU = 9876543210987654321098, Nama Partner = PT XYZ.  
 
-Setelah jalankan Renamerged:  
-- `dokumen1.pdf` dan `dokumen2.pdf` digabung jadi `PT ABC.pdf`, disimpan di `ProcessedPDFs/1234567890123456789012/PT ABC.pdf`.  
-- `dokumen3.pdf` di-rename jadi `PT XYZ.pdf`, disimpan di `ProcessedPDFs/9876543210987654321098/PT XYZ.pdf`.  
+Setelah menjalankan Renamerged:  
+- dokumen1.pdf dan dokumen2.pdf digabung menjadi PT ABC.pdf, disimpan di ProcessedPDFs/1234567890123456789012/PT ABC.pdf.  
+- dokumen3.pdf di-rename menjadi PT XYZ.pdf, disimpan di ProcessedPDFs/9876543210987654321098/PT XYZ.pdf.  
 
-Gampang, kan? Nggak perlu repot buka file satu-satu! 😍
+Mudah, bukan? Tidak perlu repot membuka file satu per satu! 😍
 
 ## Catatan Penting ⚠️
-Sebelum pakai, ada beberapa hal yang perlu kamu tahu:  
-- **Keamanan File**: File ini 100% aman dan bebas virus! Tapi, karena dibuat pake PyInstaller, beberapa antivirus (kayak Windows Defender) mungkin flag sebagai "false positive". Jangan khawatir, cukup tambahkan ke exclusion:  
-  - Windows Defender: Settings > Virus & Threat Protection > Manage Settings > Add or Remove Exclusions > Tambah `renamerged.exe`. 🛡️  
-- **Kendala?**: Kalau ada masalah pas pakai Renamerged, jangan ragu hubungi aku di [Telegram](https://t.me/ssyahbandi). Aku siap bantu kapan aja! 📞  
 
-## Donasi 🎁
-Membuat Renamerged butuh waktu dan usaha, dari coding sampe testing biar aplikasi ini bener-bener berguna buat kamu. 💻 Kalau kamu merasa Renamerged membantu, boleh banget dukung aku dengan donasi via tombol "Donasi" di aplikasi, atau langsung ke link ini: [Donasi via QRIS](https://bit.ly/kiyuris). Donasi kamu bakal bantu aku terus kembangin proyek ini, mungkin nambah fitur baru yang lebih keren lagi! Terima kasih banyak! 😄💖
+Sebelum menggunakan Renamerged, perhatikan hal berikut:  
+- Keamanan File: File ini 100% aman dan bebas virus! Namun, karena dibuat menggunakan PyInstaller, beberapa antivirus (seperti Windows Defender) mungkin mendeteksi sebagai "false positive". Jangan khawatir, tambahkan ke exclusion:  
+  - Windows Defender: Settings > Virus & Threat Protection > Manage Settings > Add or Remove Exclusions > Tambah renamerged.exe. 🛡️  
+- Kendala?: Jika ada masalah saat menggunakan Renamerged, jangan ragu hubungi saya di [Telegram](https://t.me/ssyahbandi). Saya siap membantu kapan saja! 📞  
 
-## Kontribusi dan Feedback 🙌
-Aku sangat terbuka buat masukan! Kalau kamu punya ide fitur baru, seperti tambah fitur sortir PDF berdasarkan tanggal, atau nemuin bug, langsung aja hubungi aku via [Telegram](https://t.me/ssyahbandi). Atau, buka issue di repo ini, aku bakal respon secepat mungkin! 🚀
+Donasi 🎁
+
+Membuat Renamerged membutuhkan waktu dan usaha, dari coding hingga testing agar aplikasi ini benar-benar berguna untukmu. 💻 Jika kamu merasa Renamerged membantu, dukung saya dengan donasi via tombol "Donasi" di aplikasi, atau langsung ke link ini: [Donasi via QRIS](https://bit.ly/kiyuris). Donasi kamu akan membantu saya terus mengembangkan proyek ini, mungkin menambah fitur baru yang lebih keren lagi! Terima kasih banyak! 😄💖
+
+Kontribusi dan Feedback 🙌
+
+Saya sangat terbuka untuk masukan! Jika kamu punya ide fitur baru (misalnya, sortir PDF berdasarkan tanggal) atau menemukan bug, langsung hubungi saya via [Telegram](https://t.me/ssyahbandi). Kamu juga bisa membuka issue di repo ini, saya akan merespons secepat mungkin! 🚀
+
+## Changelog 📅
+
+Versi Terbaru (Oktober 2023)  
+- GUI Modern: Ditambahkan antarmuka grafis dengan progress bar untuk memantau proses. 🖥️  
+- Pratinjau File PDF: Menampilkan daftar file PDF yang terdeteksi sebelum diproses. 📄  
+- Validasi File PDF: Memeriksa apakah file PDF valid (tidak korup) sebelum diproses. ✅  
+- Kustomisasi Tema: Menambahkan opsi untuk beralih antara dark dan light mode. 🎨  
+- Penghapusan Log Proses di GUI: Log proses di GUI dihapus untuk menyederhanakan tampilan, tetapi tetap disimpan di file log.txt. 📋  
+- Penjajaran Tombol: Tombol "Donasi" dan "Ganti Tema" disusun rapi di sisi kanan atas, sejajar dengan tombol "Browse". 🖱️  
 
 ## Terima Kasih! 💖
-Terima kasih udah nyobain Renamerged! Semoga aplikasi ini bikin hidupmu lebih mudah dan dokumenmu lebih rapi. Jangan lupa share ke temen-temen yang butuh, ya! 😊 Aku harap Renamerged bisa jadi temen setia buat urusan PDF-mu! 🌟
+
+Terima kasih sudah mencoba Renamerged! Semoga aplikasi ini membuat hidupmu lebih mudah dan dokumenmu lebih rapi. Jangan lupa share ke teman-teman yang membutuhkan, ya! 😊 Saya harap Renamerged bisa menjadi teman setia untuk urusan PDF-mu! 🌟
