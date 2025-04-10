@@ -52,7 +52,7 @@ Ada dua pilihan untukmu:
 Menggunakan Renamerged sangat mudah berkat GUI-nya! Ikuti langkah berikut:  
 1. Download renamerged.exe dari [Releases](https://github.com/ssyahbandi/PDF_Renamer/releases). 📦  atau direct langsung di [Sini](https://github.com/ssyahbandi/PDF_Renamer/releases/download/v1.2.0/renamerged.exe)
 2. Klik dua kali renamerged.exe untuk menjalankan aplikasi. 🖱️
-- **Catatan** : Jika muncul pop-up "Windows protected your PC", klik "More info" lalu pilih "Run anyway" untuk melanjutkan. Ini terjadi karena aplikasi belum ditandatangani secara resmi oleh Windows, tapi sangat aman digunakan!
+   - ⚠️**Catatan**⚠️ : Jika muncul pop-up "Windows protected your PC", klik "More info" lalu pilih "Run anyway" untuk melanjutkan. Ini terjadi karena aplikasi belum ditandatangani secara resmi oleh Windows, tapi sangat aman digunakan!
 4. Di jendela yang muncul:  
    - Klik "Browse" di bagian "Pilih Folder Input PDF", lalu pilih folder tempat file PDF kamu disimpan ```(contoh: C:/Dokumen/PDF)```. 📂  
    - Lihat pratinjau daftar file PDF yang terdeteksi di bawah "Daftar File PDF". 👀  
