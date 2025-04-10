@@ -1,4 +1,4 @@
-//script by Channel XMedia
+//script by Channel XMedia (Recode By Syahbandi)
 
 javascript:(function() {
     // Fungsi untuk menunggu elemen muncul di DOM
