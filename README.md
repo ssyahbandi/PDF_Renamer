@@ -113,3 +113,12 @@ Saya sangat terbuka untuk masukan! Jika kamu punya ide fitur baru (misalnya, sor
 ## Terima Kasih! 💖
 
 Terima kasih sudah mencoba Renamerged! Semoga aplikasi ini membuat hidupmu lebih mudah dan dokumenmu lebih rapi. Jangan lupa share ke teman-teman yang membutuhkan, ya! 😊 Saya harap Renamerged bisa menjadi teman setia untuk urusan PDF-mu! 🌟
+
+## 🎁BONUS🎁
+
+Aku ketika ngoding dan ga ada BUG bee like :
+
+![image](https://github.com/user-attachments/assets/8c819a28-52f1-4503-9469-e81e467ad619)
+
+HOAAAAAAAAH LEGA RASANYA
+
