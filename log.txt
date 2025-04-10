@@ -307,3 +307,73 @@
 [2025-04-10 13:49:32] ❌ Total error           : 0
 
 [2025-04-10 13:49:32] ✨ Selesai
+[2025-04-10 14:03:41] Total file ditemukan: 180
+[2025-04-10 14:04:08] ✅ 20 file berhasil digabung menjadi Prima Utama.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0712982594609000000000
+[2025-04-10 14:04:09] ✅ 60 file berhasil digabung menjadi Rajalu.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0712982594609000000000
+[2025-04-10 14:04:12] ✅ 40 file berhasil digabung menjadi Panca Prima Abadi.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0712982594609000000000
+[2025-04-10 14:04:13] ✅ 40 file berhasil digabung menjadi Bagong Berjaya Nusantara.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0316721570603000000000
+[2025-04-10 14:04:14] ✅ 20 file berhasil digabung menjadi Graha Jaya Makmur.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0947793543518000000000
+[2025-04-10 14:04:14] 
+📊 Hasil Akhir:
+[2025-04-10 14:04:14] 📝 Total file diproses   : 180
+[2025-04-10 14:04:14] 📂 File hanya dipindahkan: 0
+[2025-04-10 14:04:14] ✅ File yang digabung    : 5
+[2025-04-10 14:04:14] ❌ Total error           : 0
+
+[2025-04-10 14:04:14] ✨ Selesai
+[2025-04-10 14:09:06] Total file ditemukan: 180
+[2025-04-10 14:09:32] ✅ 20 file berhasil digabung menjadi Prima Utama.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0712982594609000000000
+[2025-04-10 14:09:33] ✅ 60 file berhasil digabung menjadi Rajalu.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0712982594609000000000
+[2025-04-10 14:09:36] ✅ 40 file berhasil digabung menjadi Panca Prima Abadi.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0712982594609000000000
+[2025-04-10 14:09:36] ✅ 40 file berhasil digabung menjadi Bagong Berjaya Nusantara.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0316721570603000000000
+[2025-04-10 14:09:38] ✅ 20 file berhasil digabung menjadi Graha Jaya Makmur.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0947793543518000000000
+[2025-04-10 14:09:38] 
+📊 Hasil Akhir:
+[2025-04-10 14:09:38] 📝 Total file diproses   : 180
+[2025-04-10 14:09:38] 📂 File hanya dipindahkan: 0
+[2025-04-10 14:09:38] ✅ File yang digabung    : 5
+[2025-04-10 14:09:38] ❌ Total error           : 0
+
+[2025-04-10 14:09:38] ✨ Selesai
+[2025-04-10 14:14:22] Total file ditemukan: 180
+[2025-04-10 14:14:49] ✅ 20 file berhasil digabung menjadi Prima Utama.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0712982594609000000000
+[2025-04-10 14:14:49] ✅ 60 file berhasil digabung menjadi Rajalu.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0712982594609000000000
+[2025-04-10 14:14:52] ✅ 40 file berhasil digabung menjadi Panca Prima Abadi.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0712982594609000000000
+[2025-04-10 14:14:53] ✅ 40 file berhasil digabung menjadi Bagong Berjaya Nusantara.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0316721570603000000000
+[2025-04-10 14:14:54] ✅ 20 file berhasil digabung menjadi Graha Jaya Makmur.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0947793543518000000000
+[2025-04-10 14:14:54] 
+📊 Hasil Akhir:
+[2025-04-10 14:14:54] 📝 Total file diproses   : 180
+[2025-04-10 14:14:54] 📂 File hanya dipindahkan: 0
+[2025-04-10 14:14:54] ✅ File yang digabung    : 5
+[2025-04-10 14:14:54] ❌ Total error           : 0
+
+[2025-04-10 14:14:54] ✨ Selesai
+Total file ditemukan: 180
+✅ 20 file berhasil digabung menjadi Prima Utama.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0712982594609000000000
+✅ 60 file berhasil digabung menjadi Rajalu.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0712982594609000000000
+✅ 40 file berhasil digabung menjadi Panca Prima Abadi.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0712982594609000000000
+✅ 40 file berhasil digabung menjadi Bagong Berjaya Nusantara.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0316721570603000000000
+✅ 20 file berhasil digabung menjadi Graha Jaya Makmur.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0947793543518000000000
+
+📊 Hasil Akhir:
+📝 Total file diproses   : 180
+📂 File hanya dipindahkan: 0
+✅ File yang digabung    : 5
+❌ Total error           : 0
+
+✨ Selesai
+Total file ditemukan: 180
+✅ 20 file berhasil digabung menjadi Prima Utama.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0712982594609000000000
+✅ 60 file berhasil digabung menjadi Rajalu.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0712982594609000000000
+✅ 40 file berhasil digabung menjadi Panca Prima Abadi.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0712982594609000000000
+✅ 40 file berhasil digabung menjadi Bagong Berjaya Nusantara.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0316721570603000000000
+✅ 20 file berhasil digabung menjadi Graha Jaya Makmur.pdf di D:/Prive/exe/renamerged/Test\ProcessedPDFs\0947793543518000000000
+
+📊 Hasil Akhir:
+📝 Total file diproses   : 180
+📂 File hanya dipindahkan: 0
+✅ File yang digabung    : 5
+❌ Total error           : 0
+
+✨ Selesai
