@@ -1,4 +1,3 @@
-# src/pdf_processor.py
 import pdfplumber
 import re
 import os
@@ -21,23 +20,21 @@ def extract_info_from_pdf(pdf_path):
 
     return id_tku_seller, partner_name
 
-def process_pdfs(input_directory, output_directory=None):
-    """Memproses file PDF: rename jika 1, merge jika lebih dari 1."""
+def process_pdfs(input_directory, output_directory=None, progress_callback=None):
+    """Memproses file PDF: rename jika 1, merge jika lebih dari 1, dengan dukungan progress callback."""
     if output_directory is None or output_directory.strip() == "":
         output_directory = os.path.join(input_directory, "ProcessedPDFs")
     os.makedirs(output_directory, exist_ok=True)
     
+    # Tahap 1: Perhitungan file PDF (tidak ada progress callback)
     pdf_files = [f for f in os.listdir(input_directory) if f.endswith('.pdf')]
     total_files = len(pdf_files)
-    renamed_files = 0
-    merged_files = 0
-    error_files = 0
-    
     log_message(f"Total file ditemukan: {total_files}", Fore.CYAN)
 
-    # Kelompokkan PDF berdasarkan ID TKU Penjual & partner_name
+    # Tahap 2: Pembacaan dan pengelompokan (40%)
     idtku_seller_groups = {}
-
+    processed_files = 0
+    error_files = 0
     for filename in pdf_files:
         pdf_path = os.path.join(input_directory, filename)
         try:
@@ -58,7 +55,16 @@ def process_pdfs(input_directory, output_directory=None):
             error_files += 1
             log_message(f"❌ Error membaca {filename}: {str(e)}", Fore.RED)
 
-    # Proses setiap grup berdasarkan ID TKU Penjual & partner_name
+        processed_files += 1
+        if progress_callback:
+            progress_callback("reading", processed_files, total_files)
+
+    # Tahap 3: Pemrosesan (rename atau merge) (50%)
+    total_groups = sum(len(partner_files) for partner_files in idtku_seller_groups.values())
+    processed_groups = 0
+    renamed_files = 0
+    merged_files = 0
+
     for id_tku_seller, partner_files in idtku_seller_groups.items():
         idtku_folder = os.path.join(output_directory, id_tku_seller)
         os.makedirs(idtku_folder, exist_ok=True)
@@ -90,6 +96,14 @@ def process_pdfs(input_directory, output_directory=None):
                     log_message(f"✅ {len(files)} file berhasil digabung menjadi {merged_filename} di {idtku_folder}", Fore.GREEN)
                 except Exception as e:
                     log_message(f"❌ Gagal merge {partner_name}: {str(e)}", Fore.RED)
+            
+            processed_groups += 1
+            if progress_callback:
+                progress_callback("processing", processed_groups, total_groups)
+
+    # Tahap 4: Finalisasi (10%)
+    if progress_callback:
+        progress_callback("finalizing", 0, 1)
 
     log_message("\n📊 Hasil Akhir:", Fore.CYAN)
     log_message(f"📝 Total file diproses   : {total_files}", Fore.CYAN)
@@ -97,4 +111,8 @@ def process_pdfs(input_directory, output_directory=None):
     log_message(f"✅ File yang digabung    : {merged_files}", Fore.GREEN)
     log_message(f"❌ Total error           : {error_files}\n", Fore.RED)
     log_message("✨ Selesai", Fore.GREEN)
+
+    if progress_callback:
+        progress_callback("finalizing", 1, 1)
+
     return total_files, renamed_files, merged_files, error_files

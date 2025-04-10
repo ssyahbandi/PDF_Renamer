@@ -1,21 +1,22 @@
 # src/styles.py
 class Theme:
     def __init__(self):
-        # Warna tema gelap modern dengan aksen neon
-        self.bg = "#1E1E2F"  # Background utama (gelap)
-        self.fg = "#E0E0E0"  # Warna teks (abu-abu terang)
-        self.entry_bg = "#4A90E2"  # Background entry (biru muda)
-        self.entry_fg = "#000000"  # Warna teks entry (hitam untuk kontras)
-        self.button_bg = "#00C4B4"  # Warna tombol (hijau neon)
-        self.button_fg = "#FFFFFF"  # Warna teks tombol (putih)
-        self.button_hover_bg = "#00E5CC"  # Warna tombol saat hover (hijau neon lebih terang)
-        self.listbox_bg = "#2D2D44"  # Background listbox
-        self.listbox_fg = "#E0E0E0"  # Warna teks listbox
-        self.status_fg = "#00C4B4"  # Warna teks status (hijau neon)
-        self.donate_bg = "#FF6F61"  # Warna tombol donasi (oranye kemerahan)
-        self.donate_hover_bg = "#FF8A80"  # Warna tombol donasi saat hover
+        # Warna sesuai deskripsi
+        self.bg = "#333333"  # Latar belakang abu-abu gelap
+        self.fg = "#FFFFFF"  # Teks putih
+        self.entry_bg = "#555555"  # Latar kolom teks abu-abu terang
+        self.entry_fg = "#FFFFFF"  # Teks kolom teks putih
+        self.button_bg = "#000000"  # Tombol Browse hitam
+        self.button_fg = "#FFFFFF"  # Teks tombol Browse putih
+        self.button_hover_bg = "#222222"  # Hover tombol Browse
+        self.action_button_bg = "#FF69B4"  # Tombol aksi pink
+        self.action_button_fg = "#FFFFFF"  # Teks tombol aksi putih
+        self.action_button_hover_bg = "#FF85C2"  # Hover tombol aksi
+        self.progress_fg = "#00FF00"  # Progress bar hijau
+        self.progress_bg = "#555555"  # Latar progress bar
+        self.stats_fg = "#FF0000"  # Teks statistik merah
 
-        # Font modern dengan ukuran lebih besar
-        self.title_font = ("Helvetica", 20, "bold")
-        self.label_font = ("Helvetica", 12)
-        self.button_font = ("Helvetica", 12, "bold")
+        # Font
+        self.title_font = ("Helvetica", 24, "bold")  # Judul besar dan tebal
+        self.label_font = ("Helvetica", 12)  # Label biasa
+        self.button_font = ("Helvetica", 12, "bold")  # Tombol tebal
