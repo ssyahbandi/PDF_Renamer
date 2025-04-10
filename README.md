@@ -38,7 +38,7 @@ Untuk menjalankan **source code**:
 - Python: Versi 3.8 atau lebih baru. 🐍
 - Library: pdfplumber, PyPDF2, colorama, customtkinter.  
 
-## Download 📥
+# Download 📥
 
 Yuk, download versi terbaru Renamerged di [Releases](https://github.com/ssyahbandi/PDF_Renamer/releases)! 🎁  
 Ada dua pilihan untukmu:  
