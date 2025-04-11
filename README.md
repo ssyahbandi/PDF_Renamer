@@ -97,6 +97,14 @@ Saya sangat terbuka untuk masukan! Jika kamu punya ide fitur baru (misalnya, sor
 
 ## Changelog 📅
 
+### Versi 2.0.0 (11/04/2024)
+- **Fitur Baru** : Sekarang bisa Rename dan Merged atau Rename saja
+- **Fitur Baru** : Menambahkan Fitur komponen khusus untuk Rename saja
+- **GUI** : Tampilan baru
+- **BUG FIXING** : Fix bug persentase samar saat di mode light
+- **BUG FIXING** : Memfix bug persentase samar saat di mode light
+- **File** : GUI Sekarang lebih modular komponennya
+
 ### Versi 1.2.0 (10/04/2024)
 - **GUI** : Fix Bugs
 
