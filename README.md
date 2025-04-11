@@ -43,8 +43,8 @@ Untuk menjalankan **source code**:
 Yuk, download versi terbaru Renamerged di [Releases](https://github.com/ssyahbandi/PDF_Renamer/releases)! 🎁 atau direct langsung di [Sini](https://github.com/ssyahbandi/PDF_Renamer/releases/download/v1.2.0/renamerged.exe)
 
 Ada dua pilihan untukmu:  
-- ```renamerged.exe```: Versi executable dengan GUI, tinggal download dan jalankan. Tidak perlu instal Python atau library apa pun. Cocok untuk pengguna awam! 🖱️  
-- Source Code: Clone repo ini jika kamu ingin melihat atau mengedit kode. Pastikan Python dan library berikut sudah terinstal:  
+1. ```renamerged.exe```: Versi executable dengan GUI, tinggal download dan jalankan. Tidak perlu instal Python atau library apa pun. Cocok untuk pengguna awam! 🖱️  
+2. Source Code: Clone repo ini jika kamu ingin melihat atau mengedit kode. Pastikan Python dan library berikut sudah terinstal:  
   ```pip install pdfplumber PyPDF2 colorama customtkinter```
 
 ## Cara Pakai 🚀
